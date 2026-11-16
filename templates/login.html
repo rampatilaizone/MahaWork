@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<div class="form narrow"><h1>Login</h1><form method="post"><input type="hidden" name="csrf_token" value="{{csrf_token()}}"><label>मोबाईल<input name="phone" maxlength="10" required></label><label>पासवर्ड<input type="password" name="password" required></label><button class="btn">Login</button></form></div>{% endblock %}

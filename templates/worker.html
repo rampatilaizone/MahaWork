@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>Worker Dashboard</h1><div class="panel"><h2>माझे अर्ज</h2><table><tr><th>काम ID</th><th>स्थिती</th><th>संदेश</th></tr>{% for a in apps %}<tr><td>{{a.job_id}}</td><td>{{a.status}}</td><td>{{a.message}}</td></tr>{% else %}<tr><td colspan="3">अर्ज नाहीत.</td></tr>{% endfor %}</table></div>{% endblock %}
